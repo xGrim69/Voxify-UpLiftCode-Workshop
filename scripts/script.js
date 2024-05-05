@@ -48,7 +48,6 @@ function speakVoice() {
   speechSynthesis.speak(message);
 }
 
-voicesDropdown.addEventListener("load", getVoices);
 speechSynthesis.addEventListener("voiceschanged", populateVoices);
 voicesDropdown.addEventListener("change", setVoice);
 rateInput.addEventListener("change", setRate);
